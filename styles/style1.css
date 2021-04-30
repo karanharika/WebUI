@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(155, 155, 155);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    text-align: center;
+  }
+
+.footer-contents {
+    margin-top: 10px;
+}
