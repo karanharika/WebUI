@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../styles/style1.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../index.html">ArtistMine</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./latestArrivals.html">Latest Arrivals</a></li>
+                <li><a href="./Popular.html">Popular Forever</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span
+                            class="glyphicon glyphicon-user"></span> Mr. Stan Lee
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Account Settings</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">Sign out</a></li>
+                    </ul>
+                </li>
+                <li><a href="./cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h2>Payment</h2>
+        <h4>Provide all the following required information</h4>
+
+        <div class="gap"></div>
+    </div>
+
+    <div class="container">
+        <form class="form-horizontal" action="#">
+            <h4>Pay with Credit Card</h4>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="visa">Card holder name:</label>
+                <div class="input-group col-sm-4">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="name" type="text" class="form-control" name="name" placeholder="Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="visa">Card number:</label>
+                <div class="input-group col-sm-4">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
+                <input id="card" type="visa" class="form-control" name="visa" placeholder="5555 4444 4444 4444">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="month">Expiry Month:</label>
+                <div class="input-group col-sm-2">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+
+                    <input list="months" class="form-control" id="month" placeholder="MM" name="month">
+                    <datalist id="months">
+                        <option value="01">
+                        <option value="02">
+                        <option value="03">
+                        <option value="04">
+                        <option value="05">
+                        <option value="06">
+                        <option value="07">
+                        <option value="08">
+                        <option value="09">
+                        <option value="10">
+                        <option value="11">
+                        <option value="12">
+                      </datalist>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Expiry Year:</label>
+                <div class="input-group col-sm-2">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+
+                    <input type="drop" class="form-control" id="pwd" placeholder="YYYY" name="pwd">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Security Pin:</label>
+                <div class="input-group col-sm-2">
+                    <span class="input-group-addon">CVV</span>
+
+                    <input type="number" class="form-control" id="pin" placeholder="123" name="pin">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-4">
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="remember">Save this card for future use</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-offset-1 col-sm-2"><input type="button" class="btn btn-danger" value="Back" onclick="history.back()"></div>
+            <div class="form-group">
+
+
+
+                <div class="col-sm-offset-2 col-sm-2">
+                    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">Submit</button>
+
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">Order Placed</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>Thank You for ordering from us.</p>
+                              <p>You will receive a confirmation email from us.</p>
+                              <p>Enjoy your product 😀</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="../index.html">
+                              <button type="button" class="btn btn-default" >Continue Shoping</button></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <p style="color: rgb(155, 155, 155);"> .. </p>
+    <p style="color: rgb(155, 155, 155);"> .. </p>
+    <p style="color: rgb(155, 155, 155);"> .. </p>
+    <p style="color: rgb(155, 155, 155);"> .. </p>
+
+    <div class="footer">
+        <div class="footer-contents ">
+            <p>Made by: Karanveer Harika</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
