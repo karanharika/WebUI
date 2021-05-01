@@ -27,3 +27,9 @@ body {
     height: 550px;
 }
 
+.gap {
+    padding: 2%;
+}
+.myCentre {
+    text-align: center;
+}
