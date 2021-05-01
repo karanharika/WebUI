@@ -37,3 +37,7 @@ body {
 .redDye {
     color: red;
 }
+
+.noneDecore {
+    text-decoration: none;
+}
