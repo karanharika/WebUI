@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(155, 155, 155);
+    background-color: rgb(194, 194, 194);
 }
 
 .footer {
@@ -32,4 +32,8 @@ body {
 }
 .myCentre {
     text-align: center;
+}
+
+.redDye {
+    color: red;
 }
